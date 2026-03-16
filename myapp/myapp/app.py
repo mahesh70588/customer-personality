@@ -482,8 +482,8 @@ hr { border: none !important; border-top: 1px solid rgba(255,255,255,0.06) !impo
 # ── Load model ────────────────────────────────────────────────────────────────
 @st.cache_resource
 def load_model():
-    with open("model.pkl",     "rb") as f: model     = pickle.load(f)
-    with open("threshold.pkl", "rb") as f: threshold = pickle.load(f)
+    with open("myapp/model.pkl",     "rb") as f: model     = pickle.load(f)
+    with open("myapp/threshold.pkl", "rb") as f: threshold = pickle.load(f)
     return model, threshold
 
 model, best_threshold = load_model()
